@@ -1,10 +1,10 @@
 {
-  "name": "just-mock-it",
-  "version": "0.0.1",
+  "name": "mockify",
+  "version": "1-0.0",
   "description": "",
   "author": "",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -17,7 +17,8 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "npx dotenv-cli -e .env.dev -- jest --runInBand --config .jest/jest-e2e.config.ts",
+    "test:int": "npx dotenv-cli -e .env.dev -- jest --runInBand --config .jest/jest-int.config.ts"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
