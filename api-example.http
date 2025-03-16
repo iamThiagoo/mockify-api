@@ -1,0 +1,21 @@
+###
+POST http://localhost:3000/api/v1/generate
+content-type: application/json
+
+{
+  "locale": "pt_BR",
+  "show_errors": true,
+  "repeat": 1,
+  "single_item": true,
+  "mock": {
+    "first_name": {
+      "type": "firstName"
+    },
+    "middle_name": {
+      "type": "middleName"
+    },
+    "last_name": {
+      "type": "lastName"
+    }
+  }
+}
