@@ -1,4 +1,4 @@
-# Mockify 🎭
+# Mockify API 🎭
 
 Mockify is a modern mock data generation API that helps developers create realistic test data with minimal effort. Whether you're building a prototype, writing tests, or need sample data for your application, Mockify has you covered.
 
@@ -58,96 +58,60 @@ Content-Type: application/json
 
 ## Supported Types
 
-| Category & Type | Category & Type |
-|----------------|-----------------|
-| **Address** | **Internet** |
-| • Zip Code | • Email |
-| • City | • URL |
-| • Street Address | • Domain Name |
-| • Country | • IP |
-| • State | • IPv6 |
-| • Latitude | • User Agent |
-| • Longitude | • Password |
-| • Building Number | |
-| • Street Name | |
-| &nbsp; |
-| **Commerce** | **Lorem** |
-| • Product Name | • Word |
-| • Price | • Words |
-| • Department | • Sentence |
-| • Product Description | • Sentences |
-| • Product Adjective | • Paragraph |
-| • Product Material | • Paragraphs |
-| | • Text |
-| &nbsp; |
-| **Company** | **Music** |
-| • Company Name | • Genre |
-| • Catch Phrase | • Song Name |
-| • BS | • Artist |
-| • Industry | |
-| • Profession | |
-| &nbsp; |
-| **Database** | **Person** |
-| • Column | • First Name |
-| • Type | • Last Name |
-| • Collation | • Middle Name |
-| • Engine | • Gender |
-| | • Bio |
-| | • Age |
-| &nbsp; |
-| **Date** | **Phone** |
-| • Past | • Phone Number |
-| • Future | • Number Format |
-| • Recent | • IMEI |
-| • Soon | |
-| • Month | |
-| • Weekday | |
-| &nbsp; |
-| **Finance** | **Random** |
-| • Account | • UUID |
-| • Account Name | • Boolean |
-| • Routing Number | • Locale |
-| • Credit Card Number | • Alpha |
-| • Currency | • Alphanumeric |
-| • Transaction Type | • Word |
-| • Bitcoin Address | • Words |
-| &nbsp; |
-| **Git** | **Science** |
-| • Branch | • Chemical Element |
-| • Commit Entry | • Unit |
-| • Commit Message | • Measurement |
-| • Commit SHA | |
-| &nbsp; |
-| **Hacker** | **System** |
-| • Abbreviation | • File Name |
-| • Adjective | • File Path |
-| • Noun | • File Extension |
-| • Verb | • MIME Type |
-| • Phrase | • Directory Path |
-| | • Network Interface |
-| &nbsp; |
-| **Image** | **Time** |
-| • URL | • Hour |
-| • Avatar | • Minute |
-| • Fashion | • Second |
-| • Nature | |
-| • People | |
-| • Animals | |
-| &nbsp; |
-| **Vehicle** | **Color** |
-| • Manufacturer | • Hex |
-| • Model | • RGB |
-| • Type | • Name |
-| • Fuel | • HSL |
-| • VIN | |
-| • Color | |
-| &nbsp; |
-| **Animal** | |
-| • Dog | |
-| • Cat | |
-| • Horse | |
-| • Bird | |
-| • Fish | |
+| Category & Type | Category & Type | Category & Type | Category & Type |
+|----------------|-----------------|-----------------|-----------------|
+| **Address** | **Date** | **Hacker** | **Person** |
+| • Zip Code | • Past | • Abbreviation | • First Name |
+| • City | • Future | • Adjective | • Last Name |
+| • Street Address | • Recent | • Noun | • Middle Name |
+| • Country | • Soon | • Verb | • Gender |
+| • State | • Month | • Phrase | • Bio |
+| • Latitude | • Weekday | | • Age |
+| • Longitude | | | |
+| • Building Number | | | |
+| • Street Name | | | |
+| | &nbsp; | | |
+| **Commerce** | **Finance** | **Image** | **Phone** |
+| • Product Name | • Account | • URL | • Phone Number |
+| • Price | • Account Name | • Avatar | • Number Format |
+| • Department | • Routing Number | • Fashion | • IMEI |
+| • Product Description | • Credit Card Number | • Nature | |
+| • Product Adjective | • Currency | • People | |
+| • Product Material | • Transaction Type | • Animals | |
+| | • Bitcoin Address | | |
+| | &nbsp; | | |
+| **Company** | **Git** | **Internet** | **Random** |
+| • Company Name | • Branch | • Email | • UUID |
+| • Catch Phrase | • Commit Entry | • URL | • Boolean |
+| • BS | • Commit Message | • Domain Name | • Locale |
+| • Industry | • Commit SHA | • IP | • Alpha |
+| • Profession | | • IPv6 | • Alphanumeric |
+| | | • User Agent | • Word |
+| | | • Password | • Words |
+| | &nbsp; | | |
+| **Database** | **Lorem** | **Music** | **Science** |
+| • Column | • Word | • Genre | • Chemical Element |
+| • Type | • Words | • Song Name | • Unit |
+| • Collation | • Sentence | • Artist | • Measurement |
+| • Engine | • Sentences | | |
+| | • Paragraph | | |
+| | • Paragraphs | | |
+| | • Text | | |
+| | &nbsp; | | |
+| **System** | **Time** | **Vehicle** | **Color** |
+| • File Name | • Hour | • Manufacturer | • Hex |
+| • File Path | • Minute | • Model | • RGB |
+| • File Extension | • Second | • Type | • Name |
+| • MIME Type | | • Fuel | • HSL |
+| • Directory Path | | • VIN | |
+| • Network Interface | | • Color | |
+| | &nbsp; | | |
+| **Animal** | | | |
+| • Dog | | | |
+| • Cat | | | |
+| • Horse | | | |
+| • Bird | | | |
+| • Fish | | | |
 
 ## Contributing
 
