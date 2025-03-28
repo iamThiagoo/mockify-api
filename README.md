@@ -58,60 +58,51 @@ Content-Type: application/json
 
 ## Supported Types
 
-| Category & Type | Category & Type | Category & Type | Category & Type |
-|----------------|-----------------|-----------------|-----------------|
-| **Address** | **Date** | **Hacker** | **Person** |
-| • Zip Code | • Past | • Abbreviation | • First Name |
-| • City | • Future | • Adjective | • Last Name |
-| • Street Address | • Recent | • Noun | • Middle Name |
-| • Country | • Soon | • Verb | • Gender |
-| • State | • Month | • Phrase | • Bio |
-| • Latitude | • Weekday | | • Age |
-| • Longitude | | | |
-| • Building Number | | | |
-| • Street Name | | | |
-| | &nbsp; | | |
-| **Commerce** | **Finance** | **Image** | **Phone** |
-| • Product Name | • Account | • URL | • Phone Number |
-| • Price | • Account Name | • Avatar | • Number Format |
-| • Department | • Routing Number | • Fashion | • IMEI |
-| • Product Description | • Credit Card Number | • Nature | |
-| • Product Adjective | • Currency | • People | |
-| • Product Material | • Transaction Type | • Animals | |
-| | • Bitcoin Address | | |
-| | &nbsp; | | |
-| **Company** | **Git** | **Internet** | **Random** |
-| • Company Name | • Branch | • Email | • UUID |
-| • Catch Phrase | • Commit Entry | • URL | • Boolean |
-| • BS | • Commit Message | • Domain Name | • Locale |
-| • Industry | • Commit SHA | • IP | • Alpha |
-| • Profession | | • IPv6 | • Alphanumeric |
-| | | • User Agent | • Word |
-| | | • Password | • Words |
-| | &nbsp; | | |
-| **Database** | **Lorem** | **Music** | **Science** |
-| • Column | • Word | • Genre | • Chemical Element |
-| • Type | • Words | • Song Name | • Unit |
-| • Collation | • Sentence | • Artist | • Measurement |
-| • Engine | • Sentences | | |
-| | • Paragraph | | |
-| | • Paragraphs | | |
-| | • Text | | |
-| | &nbsp; | | |
-| **System** | **Time** | **Vehicle** | **Color** |
-| • File Name | • Hour | • Manufacturer | • Hex |
-| • File Path | • Minute | • Model | • RGB |
-| • File Extension | • Second | • Type | • Name |
-| • MIME Type | | • Fuel | • HSL |
-| • Directory Path | | • VIN | |
-| • Network Interface | | • Color | |
-| | &nbsp; | | |
-| **Animal** | | | |
-| • Dog | | | |
-| • Cat | | | |
-| • Horse | | | |
-| • Bird | | | |
-| • Fish | | | |
+| Category & Type | Category & Type | Category & Type | Category & Type | Category & Type |
+|----------------|-----------------|-----------------|-----------------|-----------------|
+| **Address** | **Company** | **Git** | **Lorem** | **Science** |
+| • Zip Code | • Company Name | • Branch | • Word | • Chemical Element |
+| • City | • Catch Phrase | • Commit Entry | • Words | • Unit |
+| • Street Address | • BS | • Commit Message | • Sentence | • Measurement |
+| • Country | • Industry | • Commit SHA | • Sentences | |
+| • State | • Profession | | • Paragraph | |
+| • Latitude | | | • Paragraphs | |
+| • Longitude | | | • Text | |
+| • Building Number | | | | |
+| • Street Name | | | | |
+| | &nbsp; | | | |
+| **Commerce** | **Database** | **Hacker** | **Music** | **System** |
+| • Product Name | • Column | • Abbreviation | • Genre | • File Name |
+| • Price | • Type | • Adjective | • Song Name | • File Path |
+| • Department | • Collation | • Noun | • Artist | • File Extension |
+| • Product Description | • Engine | • Verb | | • MIME Type |
+| • Product Adjective | | • Phrase | | • Directory Path |
+| • Product Material | | | | • Network Interface |
+| | &nbsp; | | | |
+| **Date** | **Finance** | **Image** | **Person** | **Time** |
+| • Past | • Account | • URL | • First Name | • Hour |
+| • Future | • Account Name | • Avatar | • Last Name | • Minute |
+| • Recent | • Routing Number | • Fashion | • Middle Name | • Second |
+| • Soon | • Credit Card Number | • Nature | • Gender | |
+| • Month | • Currency | • People | • Bio | |
+| • Weekday | • Transaction Type | • Animals | • Age | |
+| | • Bitcoin Address | | | |
+| | &nbsp; | | | |
+| **Internet** | **Phone** | **Random** | **Vehicle** | **Color** |
+| • Email | • Phone Number | • UUID | • Manufacturer | • Hex |
+| • URL | • Number Format | • Boolean | • Model | • RGB |
+| • Domain Name | • IMEI | • Locale | • Type | • Name |
+| • IP | | • Alpha | • Fuel | • HSL |
+| • IPv6 | | • Alphanumeric | • VIN | |
+| • User Agent | | • Word | • Color | |
+| • Password | | • Words | | |
+| | &nbsp; | | | |
+| **Animal** | | | | |
+| • Dog | | | | |
+| • Cat | | | | |
+| • Horse | | | | |
+| • Bird | | | | |
+| • Fish | | | | |
 
 ## Contributing
 
