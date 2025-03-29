@@ -8,7 +8,7 @@ export enum FakerTypes {
   AddressLatitude = 'address.latitude',
   AddressLongitude = 'address.longitude',
   AddressBuildingNumber = 'address.buildingNumber',
-  AddressStreetName = 'address.streetName',
+  AddressStreetName = 'location.streetAddress',
 
   // Commerce
   CommerceProductName = 'commerce.productName',
@@ -19,11 +19,8 @@ export enum FakerTypes {
   CommerceProductMaterial = 'commerce.productMaterial',
 
   // Company
-  CompanyName = 'company.companyName',
+  CompanyName = 'company.name',
   CompanyCatchPhrase = 'company.catchPhrase',
-  CompanyBs = 'company.bs',
-  CompanyIndustry = 'company.industry',
-  CompanyProfession = 'company.profession',
 
   // Database
   DatabaseColumn = 'database.column',
@@ -95,13 +92,16 @@ export enum FakerTypes {
   // Person
   FirstName = 'person.firstName',
   LastName = 'person.lastName',
+  FullName = 'person.fullName',
   MiddleName = 'person.middleName',
   Gender = 'person.gender',
   Bio = 'person.bio',
-  Age = 'person.age',
+  JobTitle = 'person.jobTitle',
+  JobDescriptor = 'person.jobDescriptor',
+  JobArea = 'person.jobArea',
 
   // Phone
-  PhoneNumber = 'phone.phoneNumber',
+  PhoneNumber = 'phone.number',
   PhoneNumberFormat = 'phone.phoneNumberFormat',
   PhoneImei = 'phone.imei',
 
@@ -122,7 +122,7 @@ export enum FakerTypes {
   // System
   SystemFileName = 'system.fileName',
   SystemFilePath = 'system.filePath',
-  SystemFileExtension = 'system.fileExtension',
+  SystemFileExtension = 'system.fileExt',
   SystemMimeType = 'system.mimeType',
   SystemDirectoryPath = 'system.directoryPath',
   SystemNetworkInterface = 'system.networkInterface',
@@ -148,8 +148,8 @@ export enum FakerTypes {
   AnimalFish = 'animal.fish',
 
   // Color
-  ColorHex = 'color.hex',
+  ColorHex = `color.rgb({ format: 'hex', casing: 'lower' })`,
   ColorRgb = 'color.rgb',
-  ColorName = 'color.colorName',
+  ColorName = 'color.human',
   ColorHsl = 'color.hsl',
 }

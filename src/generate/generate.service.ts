@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
 import { MockDto } from './dto/mock.dto';
 import { FakerLocale } from './enums/faker-locale.enum';
 import { allFakers, Faker } from '@faker-js/faker';
@@ -42,14 +40,21 @@ export class GenerateService {
         return ErrorsEnum.INVALID_TYPE;
       }
 
-      const [category, method] = fakerType.split('.');
-
-      if (faker[category] && typeof faker[category][method] === 'function') {
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-        return faker[category][method]();
+      const methodMatch = fakerType.match(/^(\w+)\.(\w+)(?:\((.*)\))?$/);
+      if (!methodMatch) {
+        throw new Error(`Invalid Faker type format: ${type}`);
       }
 
-      throw new Error(`Invalid Faker type: ${type}`);
+      const [, category, methodName, args = ''] = methodMatch;
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+      const method = faker[category]?.[methodName];
+
+      if (typeof method !== 'function') {
+        throw new Error(`Invalid Faker type: ${type}`);
+      }
+
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-return, @typescript-eslint/no-unsafe-call
+      return method(args);
     } catch (error) {
       console.error('Error generating data: ', error);
       throw error;
