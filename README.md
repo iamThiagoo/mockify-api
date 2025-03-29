@@ -26,7 +26,6 @@ Content-Type: application/json
   "locale": "en_US",
   "show_errors": true,
   "repeat": 1,
-  "single_item": true,
   "mock": {
     "first_name": {
       "type": "firstName"
