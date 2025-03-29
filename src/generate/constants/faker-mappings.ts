@@ -53,11 +53,6 @@ export const FakerFieldMappings: Record<string, FakerTypes> = {
   department: FakerTypes.CommerceDepartment,
   description: FakerTypes.CommerceProductDescription,
 
-  // IDs and Random
-  id: FakerTypes.RandomUuid, //
-  uuid: FakerTypes.RandomUuid, //
-  boolean: FakerTypes.RandomBoolean, //
-
   // Date and Time
   date: FakerTypes.DatePast,
   futureDate: FakerTypes.DateFuture,

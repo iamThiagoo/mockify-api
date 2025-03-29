@@ -2,6 +2,23 @@
 
 Mockify is a modern mock data generation API that helps developers create realistic test data with minimal effort. Whether you're building a prototype, writing tests, or need sample data for your application, Mockify has you covered.
 
+## Summary
+- [Key Features](#key-features)
+- [Examples](#examples)
+  - [Basic Usage](#basic-usage)
+- [Supported Types](#supported-types)
+  - [Person](#person)
+  - [Contact](#contact)
+  - [Address](#address)
+  - [Company](#company)
+  - [Internet](#internet)
+  - [Commerce](#commerce)
+  - [Date and Time](#date-and-time)
+  - [Color](#color)
+  - [File and System](#file-and-system)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Key Features
 
 - **Simple API** - Generate data with just a few lines of code
@@ -57,51 +74,88 @@ Content-Type: application/json
 
 ## Supported Types
 
-| Category & Type | Category & Type | Category & Type | Category & Type | Category & Type |
-|----------------|-----------------|-----------------|-----------------|-----------------|
-| **Address** | **Company** | **Git** | **Lorem** | **Science** |
-| • Zip Code | • Company Name | • Branch | • Word | • Chemical Element |
-| • City | • Catch Phrase | • Commit Entry | • Words | • Unit |
-| • Street Address | • BS | • Commit Message | • Sentence | • Measurement |
-| • Country | • Industry | • Commit SHA | • Sentences | |
-| • State | • Profession | | • Paragraph | |
-| • Latitude | | | • Paragraphs | |
-| • Longitude | | | • Text | |
-| • Building Number | | | | |
-| • Street Name | | | | |
-| | &nbsp; | | | |
-| **Commerce** | **Database** | **Hacker** | **Music** | **System** |
-| • Product Name | • Column | • Abbreviation | • Genre | • File Name |
-| • Price | • Type | • Adjective | • Song Name | • File Path |
-| • Department | • Collation | • Noun | • Artist | • File Extension |
-| • Product Description | • Engine | • Verb | | • MIME Type |
-| • Product Adjective | | • Phrase | | • Directory Path |
-| • Product Material | | | | • Network Interface |
-| | &nbsp; | | | |
-| **Date** | **Finance** | **Image** | **Person** | **Time** |
-| • Past | • Account | • URL | • First Name | • Hour |
-| • Future | • Account Name | • Avatar | • Last Name | • Minute |
-| • Recent | • Routing Number | • Fashion | • Middle Name | • Second |
-| • Soon | • Credit Card Number | • Nature | • Gender | |
-| • Month | • Currency | • People | • Bio | |
-| • Weekday | • Transaction Type | • Animals | • Age | |
-| | • Bitcoin Address | | | |
-| | &nbsp; | | | |
-| **Internet** | **Phone** | **Random** | **Vehicle** | **Color** |
-| • Email | • Phone Number | • UUID | • Manufacturer | • Hex |
-| • URL | • Number Format | • Boolean | • Model | • RGB |
-| • Domain Name | • IMEI | • Locale | • Type | • Name |
-| • IP | | • Alpha | • Fuel | • HSL |
-| • IPv6 | | • Alphanumeric | • VIN | |
-| • User Agent | | • Word | • Color | |
-| • Password | | • Words | | |
-| | &nbsp; | | | |
-| **Animal** | | | | |
-| • Dog | | | | |
-| • Cat | | | | |
-| • Horse | | | | |
-| • Bird | | | | |
-| • Fish | | | | |
+### Person
+| Field Name | Description |
+|------------|-------------|
+| firstName | Generates a random first name |
+| middleName | Generates a random middle name |
+| lastName | Generates a random last name |
+| fullName | Generates a complete full name |
+| gender | Generates a random gender |
+| bio | Generates a random biography |
+| avatar | Generates a random avatar image URL |
+| jobTitle | Generates a random job title |
+| jobDescriptor | Generates a random job descriptor |
+| jobArea | Generates a random job area |
+
+### Contact
+| Field Name | Description |
+|------------|-------------|
+| email | Generates a random email address |
+| phone / phoneNumber | Generates a random phone number |
+| website | Generates a random website URL |
+| password | Generates a random password |
+
+### Address
+| Field Name | Description |
+|------------|-------------|
+| address / streetAddress | Generates a complete street address |
+| street / streetName | Generates a random street name |
+| buildingNumber | Generates a random building number |
+| city | Generates a random city name |
+| state | Generates a random state name |
+| country | Generates a random country name |
+| zipCode / postalCode | Generates a random postal code |
+| latitude | Generates a random latitude coordinate |
+| longitude | Generates a random longitude coordinate |
+
+### Company
+| Field Name | Description |
+|------------|-------------|
+| company / companyName | Generates a random company name |
+| catchPhrase | Generates a random company catch phrase |
+
+### Internet
+| Field Name | Description |
+|------------|-------------|
+| ip | Generates a random IPv4 address |
+| ipv6 | Generates a random IPv6 address |
+| domain | Generates a random domain name |
+| url | Generates a random URL |
+| userAgent | Generates a random user agent string |
+
+### Commerce
+| Field Name | Description |
+|------------|-------------|
+| product / productName | Generates a random product name |
+| price | Generates a random price |
+| department | Generates a random department name |
+| description | Generates a random product description |
+
+### Date and Time
+| Field Name | Description |
+|------------|-------------|
+| date / pastDate | Generates a random past date |
+| futureDate | Generates a random future date |
+| recentDate | Generates a random recent date |
+| month | Generates a random month |
+| weekday | Generates a random weekday |
+
+### Color
+| Field Name | Description |
+|------------|-------------|
+| color | Generates a random color name |
+| hex | Generates a random hex color code |
+| rgb | Generates a random RGB color value |
+| hsl | Generates a random HSL color value |
+
+### File and System
+| Field Name | Description |
+|------------|-------------|
+| fileName | Generates a random file name |
+| filePath | Generates a random file path |
+| fileExt | Generates a random file extension |
+| mimeType | Generates a random MIME type |
 
 ## Contributing
 
