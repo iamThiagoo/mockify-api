@@ -1,12 +1,13 @@
-# Mockify API 🎭
+# Mockify API
 
 Mockify is a modern mock data generation API that helps developers create realistic test data with minimal effort. Whether you're building a prototype, writing tests, or need sample data for your application, Mockify has you covered.
 
 ## Summary
-- [Key Features](#key-features)
-- [Examples](#examples)
+- [✨ Key Features](#key-features)
+- [🚀 Quick Start](#-quick-start)
+- [📚 Examples](#examples)
   - [Basic Usage](#basic-usage)
-- [Supported Types](#supported-types)
+- [🔧 Supported Types](#supported-types)
   - [Person](#person)
   - [Contact](#contact)
   - [Address](#address)
@@ -16,20 +17,38 @@ Mockify is a modern mock data generation API that helps developers create realis
   - [Date and Time](#date-and-time)
   - [Color](#color)
   - [File and System](#file-and-system)
-- [Contributing](#contributing)
-- [License](#license)
+- [🤝 Contributing](#contributing)
+- [📜 License](#license)
 
-## Key Features
+## ✨ Key Features
 
 - **Simple API** - Generate data with just a few lines of code
-- **Rich Types** - 100+ built-in data types across 15+ categories
+- **Rich Types** - 50+ built-in data types across 10+ categories
 - **Smart Schema** - Define complex data structures with ease
 - **Type Safety** - Full TypeScript support with type inference
 - **Consistency** - Deterministic output with seeding support
-- **Performance** - Generate thousands of records in milliseconds
 - **Extensible** - Create custom types and formatters
 
-## Examples
+## 🚀 Quick Start
+
+To run the application using Docker Compose, follow these steps:
+
+1. Clone the repository
+2. Copy the environment file:
+```bash
+copy .env-example .env
+```
+3. Start the application:
+```bash
+docker-compose up -d
+```
+4. The API will be available at http://localhost:3000 (or whatever port you configured in your .env file).
+5. To stop the application:
+```bash
+docker-compose down
+```
+
+## 📚 Examples
 
 ### Basic Usage
 
@@ -72,7 +91,7 @@ Content-Type: application/json
 ]
 ```
 
-## Supported Types
+## 🔧 Supported Types
 
 ### Person
 | Field Name | Description |
@@ -157,10 +176,10 @@ Content-Type: application/json
 | fileExt | Generates a random file extension |
 | mimeType | Generates a random MIME type |
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! If you find a bug or have a feature request, please open an issue or submit a pull request.
 
-## License
+## 📜 License
 
 Mockify is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
