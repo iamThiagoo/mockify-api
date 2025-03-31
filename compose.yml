@@ -1,10 +1,9 @@
 services:
-  mongo:
+  app:
     build: .
-    container_name: mongodb
+    container_name: mockify-api
     ports:
-      - "27017:27017"
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: root
+      - "${APP_PORT}:${APP_PORT}"
     restart: unless-stopped
+    env_file:
+      - .env
