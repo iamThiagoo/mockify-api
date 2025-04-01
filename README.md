@@ -2,6 +2,8 @@
 
 Mockify is a modern mock data generation API that helps developers create realistic test data with minimal effort. Whether you're building a prototype, writing tests, or need sample data for your application, Mockify has you covered.
 
+- API URL: https://mockify-api.up.railway.app/
+
 ## Summary
 - [✨ Key Features](#key-features)
 - [🚀 Quick Start](#-quick-start)
@@ -55,7 +57,7 @@ docker-compose down
 Generate a simple user profile:
 
 ```json
-POST /api/v1/generate
+POST https://mockify-api.up.railway.app/api/v1/generate
 Content-Type: application/json
 
 {
