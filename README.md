@@ -9,6 +9,7 @@ Mockify is a modern mock data generation API that helps developers create realis
 - [🚀 Quick Start](#-quick-start)
 - [📚 Examples](#examples)
   - [Basic Usage](#basic-usage)
+  - [API Status](#api-status)
 - [🔧 Supported Types](#supported-types)
   - [Person](#person)
   - [Contact](#contact)
@@ -91,6 +92,20 @@ Content-Type: application/json
     "email": "Maude50@hotmail.com"
   }
 ]
+```
+
+### API Status:
+
+Verify the API status by Ping:
+
+```json
+GET https://mockify-api.up.railway.app/api/v1/ping
+```
+
+```json
+200 OK
+
+Pong!
 ```
 
 ## 🔧 Supported Types
