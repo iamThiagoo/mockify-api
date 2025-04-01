@@ -8,11 +8,24 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   app.use(helmet());
-  app.useGlobalPipes(new ValidationPipe());
+  app.useGlobalPipes(
+    new ValidationPipe({
+      transform: true,
+      whitelist: true,
+      forbidNonWhitelisted: true,
+    }),
+  );
   app.setGlobalPrefix('api');
   app.enableVersioning({
     type: VersioningType.URI,
     defaultVersion: '1',
+  });
+
+  app.use((req, res, next) => {
+    if (/bot|crawler|spider/i.test(req.headers['user-agent'])) {
+      return res.status(403).send('Bad request');
+    }
+    next();
   });
 
   const config = new DocumentBuilder()
